@@ -1,0 +1,29 @@
+{
+  "name": "avatar-sociallogin",
+  "version": "0.0.1",
+  "description": "social authentication provider",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js "
+  },
+  
+  "keywords": [
+    "nodejs",
+    "express",
+    "template",
+    "twitter",
+    "bootstrap",
+    "bootstrap3"
+  ],
+  "author": "vijo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.3.4",
+    "mongoose": "^3.8.37",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.0.0",
+    "passport-google-oauth2": "^0.1.6",
+    "bcrypt-nodejs":"^0.0.3",
+    "ejs":"^2.5.6"
+  }
+}

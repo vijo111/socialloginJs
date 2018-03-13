@@ -1,0 +1,53 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Avatar - User Profile</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 10px;
+            word-wrap: break-word;
+            align-content: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" align="center">
+
+        <div class="page-header text-center" style="color:steelblue">
+            <h1>
+                <%= user.provider  %> User </h1>
+        </div>
+
+        <div class="row" align="center">
+
+            <div class="col-sm" align="center">
+                <div class="well" align="center" style="width: 600px">
+                    <h3 class="text-primary">
+                        <%= user.name %>
+                    </h3>
+                    <p>
+                        <img src="<%= user.picture %>" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"><br>
+                        <div class="alert alert-info" style="width: 400px">
+                            <strong>Name</strong>:   <%= user.name %> <br>
+                            <strong>ID</strong>:     <%= user.id %><br>
+                            <strong>Email</strong>:  <%= user.email %><br>
+                            <strong>Gender</strong>: <%= user.gender %><br>
+                            <strong>token</strong>:  <%= user.token %><br>
+                        </div>
+                    </p>
+                    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
